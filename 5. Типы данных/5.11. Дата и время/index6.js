@@ -1,0 +1,9 @@
+function getSecondsToday() {
+  let now = new Date();
+
+  let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+  return Math.round((now - today) / 1000);
+}
+
+console.log(getSecondsToday()); // количество секунд прошедших с начала дня (В моём случае: 69048)
